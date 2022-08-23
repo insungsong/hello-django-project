@@ -1,0 +1,9 @@
+from django.contrib import admin
+from django.urls import include, path
+from myapp import views
+
+urlpatterns = [
+    path('', views.index),
+    path('create/',views.create),
+    path('read/<id>/',views.read),
+]
